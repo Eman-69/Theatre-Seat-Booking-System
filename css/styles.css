@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    width: 100%;
+    background:linear-gradient(180deg,#fbfbf9,#303030);
+	font-family: Josefin Sans,sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fbfbf9;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e3242b;
+}
+::-webkit-scrollbar-button
+{
+    background: #888;
+    width: 15px;
+    height: 15px;
+}
+::-webkit-scrollbar-button:hover
+{
+    background: #e3242b;
+}
+#bookaticket-button
+{
+    height: 12%;
+    width: 6%;
+    border-radius: 50%;
+    background-color: #e3242b;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    z-index: 3;
+    position: fixed;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px black;
+}
+#bookaticket-button:hover
+{
+    transform: scale(1.5);
+}
+#bookaticket-button i
+{
+    position: absolute;
+    top: 48%;
+    left: 33%;
+}
+.bookaticket
+{
+    opacity: 0;
+    position: absolute;
+    top: -70%;
+    z-index: 4;
+    width: 40%;
+    height: 400px;
+    margin: 0% 30%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1%;
+    border-radius: 30px;
+    color: #fbfbf9;
+    overflow-y: hidden;
+    position: fixed;
+}
+.bookaticket.active
+{
+    top: 30%;
+
+    opacity: 1;
+}
+.bookaticket ol::-webkit-scrollbar
+{
+    display: none;
+}
+.bookaticket-title
+{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 1%;
+}
+#bookaticket-close
+{
+    float: right;
+}
+.bookaticket ol
+{
+    width: 100%;
+    height: 350px;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+.bookaticket form
+{
+    width: 100%;
+}
+.mname
+{
+    font-weight: bold;
+    float: left;
+    display: inline;
+    font-size: 30px;
+    text-shadow: 2px 1px rgb(46, 46, 46);
+}
+.imdb
+{
+    display: inline;
+    font-weight: bolder;
+    float: right;
+    font-size: 20px;
+    text-shadow: 1px 1px rgb(46, 46, 46);
+}
+.imdb img
+{
+    width: 40px;
+    margin-right: 20px;
+}
+/*
+.bookaticket-button
+{
+    padding: 0% 2%;
+    height: 100px;
+    background-color: #e3242b;
+    margin-top: 10px;
+    margin-left: -5%;
+}*/
+.bookaticket li:hover
+{
+    background-color: #fbfbf9;
+}
+.navbar
+{
+    z-index: +1;
+    background:linear-gradient(rgba(0,0, 0, 0.5),rgba(0,0,0,0));
+    font-size: 130%;
+    width: 100%;
+    transition: 0.3s;
+    height: 180px;
+    padding: 20% 50%;
+}
+.navbar.active
+{
+    height:100px;
+}
+#logo
+{
+    padding:0% 1%;
+}
+#logo img
+{  
+    height: 120px;
+}
+#logo img:hover
+{
+    filter: brightness(0.8);
+}
+#aboutus
+{
+    opacity: 0;
+    position: absolute;
+    height:100px;
+    width: 10%;
+    background-color: red;
+    z-index: +2;
+    top: 3%;
+    left: 10px;
+    border-radius: 1px;
+}
+#aboutus:hover
+{
+    opacity: 1;;
+}
+#signoutform
+{
+    margin: 1% 2%;
+    color: white;
+    float: right;
+    padding: 0.5%;
+    cursor: pointer;
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #1c1c1c;
+}
+#signout
+{
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+#signoutform:hover
+{
+    transform: scale(1.2);
+    filter: brightness(0.6);
+    border: 2px solid #e3242b;
+}
+#banner
+{
+    width: 100%;
+    margin-top: -20px;
+    height: 800px;
+    background: rgba(0,0, 0, 0);
+    overflow: hidden;
+}
+
+#banner-shade-bottom
+{
+    position: absolute;
+    bottom: 0px;
+    z-index: +2;
+    height: 310px;
+    width: 100%;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0));
+}
+#ulbanner{
+    position: absolute;
+    top:0;
+    padding: 0;
+    margin: 0;
+}
+#banner1,#banner2,#banner3,#banner4,#banner5
+{
+    padding-top: 800px;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+.title
+{
+    margin: 50px 0px 0px;
+    font-size: 150%;
+    font-weight: bold;
+}
+#drawer
+{
+
+    width: 96%;
+    margin: 50px 2%;
+    height: 350px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+
+}
+.drawer-div
+{
+    width: 20%;
+    height: 350px;
+    overflow: hidden;
+}
+.drawer-div li
+{
+    background-color: red;
+    padding: 0;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.drawer-poster
+{
+    height: 350px;
+    width: 101%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}

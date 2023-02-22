@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+	background-image: url(../img/index2.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	animation: gradient 10s linear infinite;
+	font-family: Josefin Sans,sans-serif;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+@keyframes gradient
+{
+	0%
+	{
+		background-size: 100% 100%;
+	}
+	20%
+	{
+		background-size: 110% 110%;
+	}
+	50%
+	{
+		background-size: 120% 120%;
+	}
+	80%
+	{
+		background-size: 110% 110%;
+	}
+	100%
+	{
+		background-size: 100% 100%;
+	}
+}
+.container
+{
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+#logo
+{
+	margin-top: 100px;
+}
+#logo img
+{
+	width: 200px;
+}
+#welcome
+{
+	color: white;
+	text-shadow: 1px 1px black;
+	margin-top: 50px;
+	margin-right: 12%;
+}
+
+.logout:hover,.logout:active
+{
+	color:#8e8d77;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#loginbutton
+{
+	width: 100%;
+	margin-left: 8%;
+	margin-top: 30px;
+}
+
+#loginbutton button
+{
+	
+	cursor: pointer;
+	font-family: Raleway,sans-serif;
+	border: 1px double white;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	padding: 15px 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 5px solid black;
+	border-radius: 2px;
+
+}
+
+#loginbutton button:hover,#loginbutton button:active
+{
+	background: inherit;
+
+}
+
+.popup
+{
+	z-index: +1;
+	position: absolute;
+	line-height: 30px;
+	
+	background: rgba(0, 0, 0, 0.9);
+	width: 400px;
+	height: 500px;
+	top: -150%;
+	left: 50%;
+	opacity: 0;
+	transform: translate(-50%,-50%) scale(1.25);
+	box-sizing: border-box;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px black;
+	transition: top 0ms ease-in-out 200ms,
+				opacity 200ms ease-in-out 0ms,
+				transform 200ms ease-in-out 0ms;
+
+}
+
+.popup.active
+{
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+	transform: translate(-50%,-50%) scale(1);
+	transition: top 0ms ease-in-out 0ms,
+				opacity 200ms ease-in-out 0ms, 
+				transform 200ms ease-in-out 0ms;
+
+}
+.logintitle
+{
+	text-align: center;
+	padding-top: 100px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.popup > div
+{
+	color: white;
+	font-family: 'Merriweather', serif;
+	text-shadow: 1px 1px black;
+}
+
+.closebtn
+{
+	line-height: 0px;
+	float: right;
+	margin: 20px 15px;
+	font-size: 30px;
+	font-weight: bold;
+	transform: translate(-50%,-50%) scale(1.25);
+	cursor: pointer;
+
+}
+
+.loginform
+{
+	font-family: Raleway,sans-serif;
+	padding: 20px 40px 0px;
+}
+
+.loginform [type="email"],.loginform [type="password"]
+{
+	outline: none;
+	border: 1px solid #aaa;
+	padding: 5px 3px;
+	width: 125%;
+	border-radius: 2px;
+	background: whitesmoke;
+
+}
+
+.loginform [type="checkbox"]
+{
+	cursor: pointer;
+}
+
+.td_class{
+	color: white;
+}
+.wrongcred
+{
+	color: red;
+	text-align: left;
+	
+}
+
+.loginbtn{
+	margin-top: 20px;
+	width: 100%;
+	height: 35px;
+	cursor: pointer;
+	font-family: Raleway,sans-serif;
+	border: 1px double white;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	padding: 15px 30px;
+	background-color: #e3a622;
+	justify-content:space-evenly;
+}
+
+
+.sign_up{
+	color:whitesmoke;
+}
+
+.sign-up-button{
+	margin-left: 10px;
+	width: 100px;
+	height: 35px;
+	cursor: pointer;
+	font-family: Raleway,sans-serif;
+	border: 1px double white;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	background-color: #e3a622;
+	justify-content:space-evenly;
+}
+
+.td_class{
+	color: white;
+}
+#footer
+{
+	padding: 20px 0px 10px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(111, 47, 37, 0.5);
+}
+#footer img
+{
+	height: 50px;
+}

@@ -1,0 +1,22 @@
+#preload
+{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8) url("../img/hehe.gif") no-repeat;
+
+    animation: comenear 5s ease-out infinite;
+    z-index: +100;
+}
+@keyframes comenear {
+    0%
+    {
+        background-size: 5%;
+        background-position: 30% 30%;
+    }  
+    100%
+    {
+        background-size: 50%;
+        background-position: 60% 60%;
+    }
+}

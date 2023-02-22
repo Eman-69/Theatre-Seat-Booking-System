@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin:0;
+    padding:0;
+    color: #bdbdbd;
+    text-shadow: 2px 2px 2px black;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Impact,sans-serif;
+    background: url("../img/bill.jpg") no-repeat;
+    background-position: center;
+	animation: gradient 10s linear infinite;
+    padding-bottom: 100px;   
+    overflow: scroll; 
+}
+@keyframes gradient
+{
+	0%
+	{
+		background-size: 140% 140%;
+	}
+	20%
+	{
+		background-size: 150% 150%;
+	}
+	50%
+	{
+		background-size: 160% 160%;
+	}
+	80%
+	{
+		background-size: 150% 150%;
+	}
+	100%
+	{
+		background-size: 140% 140%;
+	}
+}
+.bill
+{
+    font-size: 30px;
+
+}
+.bill img
+{
+    height: 30px;
+}
+.cont
+{
+    padding: 50px 40px 0px;
+    line-height: 50px;
+    position: absolute;
+    left: 30%;;
+    width: 600px;
+    background: rgba(164, 164, 164, 0.495);
+}
+table
+{
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    border-spacing: 0px 0px;
+}
+td{
+    font-size: 30px;
+}
+button{
+    border: 4px solid #221c3e;
+    cursor: pointer;
+    background: #221c3e7c;
+    font-family: Impact,sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    background: #8064f0b1;
+}

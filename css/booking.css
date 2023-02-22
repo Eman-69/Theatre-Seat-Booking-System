@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-repeat: no-repeat;
+    font-family: 'Josefin sans','Arial',sans-serif;
+    width: 100%;
+    color: #d6d6d6;
+    background-size: 100% 100%;
+}
+.title
+{
+    width: 100%;
+    height: 200px;
+    background: rgba(47, 47, 47, 0.7);
+    padding: 30px;
+    font-size: 50px;
+}
+.title h1
+{
+    font-size: 90px;
+    display: inline;
+    font-weight: bold;
+}
+.imdb
+{
+    font-family: 'Impact',sans-serif;
+    float: right;
+}
+.imdb img
+{
+    width: 100px;
+    margin-right: 20px;
+}
+.weekh1
+{
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+.timelineform
+{
+
+    display: inline-block;
+    font-size: 30px;
+    width: 450px;
+    margin-top: 30px;
+    margin-left: 7%;
+    height: 150px;
+    padding: 20px 60px;
+    border: 4px solid rgba(47, 47, 47, 1);
+    background: rgba(47, 47, 47, 0.7) 
+}
+.timelinecard
+{   
+    background: url('../img/ticketlogo.png') no-repeat;
+    color: #d6d6d6;
+    background-size: 20% 45%;
+    background-position: center;
+    border: 0px;
+
+}
+.timelinecard:hover
+{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.timelinecardr1
+{
+    width: 100%;
+}
+
+.timelinecardr2
+{
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+.seats,.time
+{
+    float: right;
+}
+
+.time{
+    margin-left: 40px;
+}
